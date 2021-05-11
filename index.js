@@ -6,9 +6,9 @@ import slugify from 'slugify';
 
 import { SitemapStream, streamToPromise } from "sitemap"
 
-const { createGzip } = require('zlib')
-const { Readable } = require('stream')
-const bodybuilder = require('bodybuilder')
+import { createGzip } from 'zlib';
+import { Readable } from 'stream';
+import bodybuilder from 'bodybuilder';
 
 let sitemap
 
