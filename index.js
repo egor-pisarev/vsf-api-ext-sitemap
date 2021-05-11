@@ -7,7 +7,6 @@ import slugify from 'slugify';
 import { SitemapStream, streamToPromise } from "sitemap"
 
 import { createGzip } from 'zlib';
-import { Readable } from 'stream';
 import bodybuilder from 'bodybuilder';
 
 let sitemap

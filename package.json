@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
-  "type": "module",
   "dependencies": {
     "sitemap": "^7.0.0",
     "slugify": "^1.5.2",
