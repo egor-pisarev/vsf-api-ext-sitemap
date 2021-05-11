@@ -4,7 +4,8 @@ import { apiStatus, getCurrentStoreView, getCurrentStoreCode } from '../../../li
 import { getClient as getElasticClient, adjustQuery, getHits } from '../../../lib/elastic';
 import slugify from 'slugify';
 
-const { SitemapStream, streamToPromise } = require('sitemap')
+import { SitemapStream, streamToPromise } from "sitemap"
+
 const { createGzip } = require('zlib')
 const { Readable } = require('stream')
 const bodybuilder = require('bodybuilder')
