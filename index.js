@@ -90,6 +90,11 @@ module.exports = ({ config, db }) => {
       console.error(e)
       apiStatus(res, err, 500);
     }
+
+    cmsApi.get('/robots', async (req, res) => {
+      res.type('text/plain');
+      res.send("User-agent: *\nDisallow: /wp/\nAllow *\nSitemap: https://klushki22.ru/sitemap.xml");
+    });
   })
 
   return cmsApi
